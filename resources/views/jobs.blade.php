@@ -23,7 +23,16 @@ per year.
 rounded-full">{{ $tag->name }}</span>
 @endforeach
 </div>
+
 </li>
 @endforeach
 </ul>
+<div class="space-y-4">
+@foreach ($jobs as $job)
+{{-- Your existing job card link --}}
+@endforeach
+</div>
+<div class="mt-6">
+{{ $jobs->links() }}
+</div>
 </x-layout>
