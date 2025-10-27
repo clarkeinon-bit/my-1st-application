@@ -15,6 +15,10 @@
                 <div class="ml-10 flex items-baseline space-x-4">
                     <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                     <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
+                    <a href="/jobs/create" 
+   class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+    Create Job
+</a>
                 </div>
             </div>
         </nav>
